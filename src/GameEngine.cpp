@@ -29,7 +29,7 @@ void GameEngine::handlePlayerGuess(char guess) {
 // Method to check if the game is over
 bool GameEngine::isGameOver() {
     if (hangmanGame->isWordGuessed()) {
-        std::cout << "Congratulations, you won!" << std::endl;
+        std::cout << "Congratulations, you won! The word was: " << hangmanGame->getWord() << std::endl;
         return true;
     } else if (hangmanGame->getIncorrectGuesses() >= maxAttempts) {
         std::cout << "Sorry, you lost. The word was: " << hangmanGame->getWord() << std::endl;

@@ -17,7 +17,7 @@ private:
     int maxAttempts;  // Max number of incorrect guesses
 
 public:
-    GameEngine(int attempts = 6);  // Constructor to initialize the game engine
+    GameEngine(int attempts = 6);  // Constructor to initialize the game engine. A total of 6 attempts.
     void play();  // Method to start the game
     void displayCurrentState();  // Method to display the current game state
     void handlePlayerGuess(char guess);  // Method to handle player input
